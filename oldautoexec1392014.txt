@@ -1,0 +1,102 @@
+//NET & FPS
+
+fps_max 120
+cl_cmdrate 66
+cl_interp 0.0152
+cl_interp_ratio 1
+cl_lagcompensation 1
+net_graph 1
+net_graphpos 600
+cl_updaterate 66
+rate 35000
+bind space "+jump"
+
+//GFX SETTINGS
+cl_burninggibs 1
+cl_detaildist 2048
+cl_detailfade 0
+cl_maxrenderable_dist 4096
+cl_new_impact_effects 1
+cl_phys_props_max 1024
+cl_ragdoll_collide 1
+lod_transitiondist 6400
+mat_aaquality 0
+mat_antialias 2
+mat_bumpmap 1
+mat_compressedtextures 1
+mat_envmapsize 512
+mat_envmaptgasize 512
+mat_forceaniso 2
+mat_hdr_level 2
+mat_monitorgamma 2.0 // Controls brightness, try 1.8 to make it brighter or 2.2
+                     // to get it darker. Only works in fullscreen.
+mat_motion_blur_enabled 0 // Disabled by default in v2.005 onwards
+mat_motion_blur_forward_enabled 0
+mat_motion_blur_strength 0
+mat_parallaxmap 1
+mat_phong 0
+mat_picmip -1 // Higher = more mipmapping. Without `sv_cheats 1', you're looking
+              // at a range from -1 to 2, -1 being the best quality, 2 being the
+              // worst.
+mat_postprocess_x 8
+mat_postprocess_y 8
+mat_reducefillrate 0
+mat_software_aa_blur_one_pixel_lines 0.5
+mat_software_aa_edge_threshold 0.8
+mat_software_aa_quality 2
+mat_software_aa_strength 2
+mat_software_aa_strength_vgui 2
+mat_specular 1
+mat_wateroverlaysize 128
+mp_decals 512
+mp_usehwmmodels 1
+mp_usehwmvcds 1
+r_avglight 3
+r_decals 512
+r_eyeglintlodpixels 8
+r_lod 0
+r_maxmodeldecal 512
+r_radiosity 1
+r_rainradius 2250
+r_rainsplashpercentage 100
+r_rootlod 0
+r_shadowmaxrendered 1024
+r_shadowrendertotexture 1
+r_shadows 1
+r_waterdrawreflection 1
+r_waterdrawrefraction 1
+r_waterforceexpensive 1
+
+
+//CPU Threading
+
+mat_queue_mode 2 // mat_queue mode is another frequently asked about cvar, it
+                 // defines the threading method to be used by the material
+                 // system. It has been unstable to use in the past, but
+                 // nowadays it's generally okay.
+                 //
+                 // Here are the possible values:
+                 //     -2 legacy default
+                 //     -1 default
+                 //      0 synchronous single thread
+                 //      1 queued single thread
+                 //      2 queued multithreaded
+                 //
+                 // If you have problems with the value `2', try setting it to
+                 // `-1'.
+                 //
+                 // As an aside, there are quite a few bugs in the demo system
+                 // that occur when mat_queue_mode is set to a value that is
+                 // not `-1'. If you intend to do work with the demo system,
+                 // maybe you should change this.
+
+cl_threaded_bone_setup 0
+cl_threaded_client_leaf_system 0
+r_queued_decals 0
+r_queued_ropes 1
+r_queued_post_processing 0
+r_threaded_client_shadow_manager 1
+r_threaded_particles 1
+r_threaded_renderables 1
+
+echo "AYY LMAO CONFIG LOADED"
