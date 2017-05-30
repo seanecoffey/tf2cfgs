@@ -1,0 +1,29 @@
+// primary
+alias primary "slot1;r_drawviewmodel 1;r_drawtracers_firstperson 0;MW1"
+alias primary2 "slot1;r_drawviewmodel 1;viewmodel_fov 100;MW1"
+
+// secondary
+alias secondary "slot2;r_drawviewmodel 1;r_drawtracers_firstperson 0;MW2"
+alias secondary2 "slot2;r_drawviewmodel 1;viewmodel_fov 100;MW2"
+
+// melee 
+alias melee "slot3;r_drawviewmodel 1;viewmodel_fov 100;MW3"
+
+// BINDINGS
+alias Q1 "primary"
+alias Q2 "secondary"
+alias MW1 "bind mwheelup secondary2;bind mwheeldown secondary2;bind q Q1"
+alias MW2 "bind mwheelup primary2;bind mwheeldown primary2;bind q Q2"
+alias MW3 "bind mwheelup secondary2;bind mwheeldown primary2"
+
+bind 1 primary
+bind 2 secondary
+bind 3 melee
+bind "mouse1" "+attack"
+bind "mouse2" "+attack2"
+bind "mouse4" "melee"
+bind "mouse3" "melee"
+
+"MW1"
+
+echo "standard with viewmodels"

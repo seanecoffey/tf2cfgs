@@ -1,18 +1,15 @@
 "motd_entries"
 {
-	"last_request_time"		"2016-08-10 22:14:15"
+	"last_request_time"		"2017-02-15 16:49:54"
 	"last_request_language"		"english"
-	"77"
+	"82"
 	{
-		"post_time"		"2016-07-29 14:50:00"
-		"title_english"		"Meat vs. Match War!"
-		"text_english"		"The Meat vs. Match War is coming to an end! There's still time to choose sides and fight for your team! Who will win and receive a class pack in a future update?!
-			
-The war will end on Sunday, August 14, 2016, at 11:59pm PDT."
-		"url"		"http://www.teamfortress.com/meetyourmatch/war.php"
-		"image"		"../vgui/main_menu/motd_meet_your_match"
+		"post_time"		"2017-02-15 15:50:00"
+		"title_english"		"Checked out the blog?"
+		"text_english"		"If you haven't read the official TF2 blog, it's full of insights into our development process, links to notable community productions, and random stories about our love of hats. Hit the button below to take a look!"
+		"url"		"http://www.teamfortress.com/"
+		"image"		"../logo/new_tf2_logo"
 		"header_type"		"0"
 		"header_english"		"News"
-		"header_icon"		"class_icons/filter_all_motd"
 	}
 }

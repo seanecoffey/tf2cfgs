@@ -1,0 +1,36 @@
+// primary
+alias main "slot1;r_drawviewmodel 0;viewmodel_fov 100;cl_crosshair_red 255;cl_crosshair_green 0;MW1"
+alias main2 "slot1;r_drawviewmodel 0;viewmodel_fov 100;cl_crosshair_red 255;cl_crosshair_green 0;MW1"
+
+// secondary
+alias second "slot2;r_drawviewmodel 0;cl_crosshair_red 0;cl_crosshair_green 255;MW2"
+alias second2 "slot2;r_drawviewmodel 0;viewmodel_fov 100;cl_crosshair_red 0;cl_crosshair_green 255;MW2"
+
+// melee 
+alias melee "slot3;r_drawviewmodel 1;viewmodel_fov 100;cl_crosshair_red 255;cl_crosshair_green 255;MW3"
+
+// BINDINGS
+alias Q1 "main"
+alias Q2 "second"
+alias MW1 "bind mwheelup main2;bind mwheeldown main2;bind q Q1"
+alias MW2 "bind mwheelup second2;bind mwheeldown second2;bind q Q2"
+alias MW3 "bind mwheelup second2;bind mwheeldown main2"
+
+bind 1 main
+bind 2 second
+bind 3 melee
+bind "mouse1" "+attack"
+bind "mouse2" "+attack2"
+bind "mouse3" "melee"
+
+
+bind "mouse1" +attack
+bind "mouse2" +attack2
+
+bind "mwheelup" main
+bind "mwheeldown" main
+
+bind w +mfwd
+bind s +mback
+bind a +mleft
+bind d +mright
