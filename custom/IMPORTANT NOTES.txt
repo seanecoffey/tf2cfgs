@@ -1,0 +1,36 @@
+HOW TO INSTALL:
+Create a folder named "Custom" in your TF2 directory if you do not already have one. C:\Steam\steamapps\common\Team Fortress 2\tf\custom\
+
+Place the HUD folder inside that custom folder
+
+To get the custom font to work properly, install the days.ttf font included to your computer. (With windows7 this can usually be done by just double clicking the file)
+
+
+
+
+
+
+
+
+
+
++Credit goes to the creator of Broesel HUD
+http://code.google.com/p/broeselhud/
+
+Credit for a few modifications go to Garm3n HUD
+http://www.sdx-gaming.eu/?page_id=4097
+
+Credit to .Unff for changing Broesel Fonts and showing it off on his stream - I instantly fell in love
+http://www.twitch.tv/unf00
+
+
+
+
+
+
+Known Bugs:
+The Class/Team Indicator can not be seen on lower resolution games. I will support this eventually, but to change it yourself edit the resource/ui/Hudplayerclass.res in notepad. Change the xpos and ypos of "playerstatusclassimage" and "playerstatusspyimage" until it is in a position you like. A lower xpos moves the icon to the right (its on the bottom left)
+
+When disguising as a spy, class indicators for all classes will get disabled. Reloading the HUD does not fix this, I have no idea why this is suddenly an issue.
+
+This HUD will not work on a MAC. I'm not sure anything can be done about this, but I'm certain I can't do it.
